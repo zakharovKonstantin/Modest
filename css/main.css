@@ -1,0 +1,591 @@
+@font-face {
+    font-family: 'Proxima Nova Bd';
+    src: url('../fonts/proximanova/subset-ProximaNova-Bold.eot');
+    src: url('../fonts/proximanova/subset-ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova/subset-ProximaNova-Bold.woff') format('woff'),
+         url('../fonts/proximanova/subset-ProximaNova-Bold.ttf') format('truetype'),
+         url('../fonts/proximanova/subset-ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'proximanovasemibold';
+    src: url('../fonts/proximanova/proximanova-semibold-webfont.eot');
+    src: url('../fonts/proximanova/proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova/proximanova-semibold-webfont.woff') format('woff'),
+         url('../fonts/proximanova/proximanova-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova/proximanova-semibold-webfont.svg#proxima_novasemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'proximanovaregular';
+    src: url('../fonts/proximanova/proximanova-regular-webfont.eot');
+    src: url('../fonts/proximanova/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova/proximanova-regular-webfont.woff') format('woff'),
+         url('../fonts/proximanova/proximanova-regular-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova/proximanova-regular-webfont.svg#proxima_novaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'playfairdisplaybold';
+    src: url('../fonts/playfairdisplay/playfairdisplay-bold-webfont.eot');
+    src: url('../fonts/playfairdisplay/playfairdisplay-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/playfairdisplay/playfairdisplay-bold-webfont.woff') format('woff'),
+         url('../fonts/playfairdisplay/playfairdisplay-bold-webfont.ttf') format('truetype'),
+         url('../fonts/playfairdisplay/playfairdisplay-bold-webfont.svg#playfair_displaybold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'playfairdisplayitalic';
+    src: url('../fonts/playfairdisplay/playfairdisplay-italic-webfont.eot');
+    src: url('../fonts/playfairdisplay/playfairdisplay-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/playfairdisplay/playfairdisplay-italic-webfont.woff') format('woff'),
+         url('../fonts/playfairdisplay/playfairdisplay-italic-webfont.ttf') format('truetype'),
+         url('../fonts/playfairdisplay/playfairdisplay-italic-webfont.svg#playfair_displayitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'gothampromedium';
+    src: url('../fonts/gothampro/gothampro-medium-webfont.eot');
+    src: url('../fonts/gothampro/gothampro-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gothampro/gothampro-medium-webfont.woff') format('woff'),
+         url('../fonts/gothampro/gothampro-medium-webfont.ttf') format('truetype'),
+         url('../fonts/gothampro/gothampro-medium-webfont.svg#gotham_promedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'gothamproregular';
+    src: url('../fonts/gothampro/gothampro-webfont.eot');
+    src: url('../fonts/gothampro/gothampro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gothampro/gothampro-webfont.woff') format('woff'),
+         url('../fonts/gothampro/gothampro-webfont.ttf') format('truetype'),
+         url('../fonts/gothampro/gothampro-webfont.svg#gotham_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/myriadpro/subset-MyriadPro-Regular.eot');
+    src: url('../fonts/myriadpro/subset-MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/myriadpro/subset-MyriadPro-Regular.woff') format('woff'),
+         url('../fonts/myriadpro/subset-MyriadPro-Regular.ttf') format('truetype'),
+         url('../fonts/myriadpro/subset-MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+    text-decoration: none;
+}
+header{
+    width: 100%;
+}
+.container{
+    width: 1173px;
+    margin: 0 auto;
+}
+.cap{
+    font-family: 'proximanovasemibold';
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.cap span{
+    color: #99999b;
+}
+.cap a{
+    display: flex;
+    padding: 10px;
+}
+.cap a img{
+    padding-right: 10px;
+}
+.cap__callItems, .cap__adressItems{
+    max-width: 195px;
+}
+.header__menu{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 12px;
+    width: 100%;
+    left: 0;
+    z-index: 10;
+}
+.header__menu a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'proximanovasemibold';
+    font-size: 13px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #080425;
+    max-width: 195px;
+    min-width: 187px;
+    text-align: center;
+    padding-top: 38px;
+    padding-bottom: 35px;
+    flex-grow: 1;
+}
+.header__menu a:hover{
+    background-color: #211e3b;
+}
+.header__menu a svg{
+    padding-left: 10px;
+}
+.startpage{
+    background-image: url(../img/homepage.jpg);
+    background-size:cover;
+    margin-bottom: 70px;
+    height: 100vh;
+    position: relative;
+}
+.startpage__slider{
+    height: 100%;
+}
+.startpage__slider-items{
+    margin-top: 200px;
+    position: relative;
+}
+.startpage__slider h2{
+    font-family: 'playfairdisplaybold';
+    color: #fff;
+    font-size: 52px;
+    line-height: 63px;
+    max-width: 530px;
+    padding-left: 20px;
+}
+.startpage__slider p{
+    font-family: 'gothamproregular';
+    font-size: 18px;
+    color: #fff;
+    line-height: 28px;
+    padding-top: 40px;
+    max-width: 475px;
+    padding-left: 20px;
+}
+.startpage__slider-button{
+    display: flex;
+    padding-top: 50px;
+}
+.startpage__slider-button a{
+    margin-left: 20px;
+    text-align: center;
+}
+.slick-next{
+    right: 0 !important;
+}
+.slick-dots .slick-active {
+    border-radius: 50%;
+    border: 1px solid;
+    transition: all 1s ease-in-out;
+}
+.scrollmouse{
+    position: absolute;
+    left: 18px;
+    bottom: 18px;
+}
+.arrowprev{
+    width: 19px;
+    height: 12px;
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    cursor: pointer;
+    fill: #fff;
+}
+.arrownext{
+    width: 18px;
+    height: 12px;
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    fill: #fff;
+    cursor: pointer;
+}
+.arrowprev:hover,
+.arrownext:hover{
+    fill: #d39500;
+}
+.slick-dots{
+    text-align: right !important;
+    right: 150px !important;
+    bottom: 150px !important;
+    color: #fff;
+}
+.slick-dots li button::before{
+    color: #96959d !important;
+}
+.slick-dots li button:hover:before{
+    color: #d39500 !important;
+}
+.yellowbutton{
+    display: inline-block;
+    font-family: 'gothampromedium';
+    color: #815e22;
+    padding: 22px;
+    background-color: #fab91e;
+    min-width: 183px;
+}
+.yellowbutton:hover{
+    background-color: #d39500;
+}
+.benefits{
+    text-align: center;
+    padding-bottom: 40px;
+}
+.nameblock{
+    font-family: 'proximanovaregular';
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+.yellowsquare{
+    width: 11px;
+    height: 11px;
+    margin: 0 auto;
+    background-color: #fab91e;
+}
+.titlecontent{
+    font-family: 'playfairdisplaybold';
+    font-size: 52px;
+    line-height: 48px;
+    padding-bottom: 60px;
+}
+.benefits__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.benefits__item{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.benefits__item img{
+    max-width: 77px;
+}
+.benefits__item-img{
+    padding-bottom: 36px;
+}
+.benefits__item-title{
+    font-family: 'playfairdisplaybold';
+    font-size: 16px;
+    color: #080425;
+    line-height: 48px;
+}
+.benefits__item-content{
+    font-family: 'proximanovaregular';
+    color: #6b687c;
+    line-height: 20px;
+    max-width: 355px;
+}
+.about{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.about .titlecontent{
+    padding-bottom: 40px;
+}
+.about__subtitle{
+    font-family: 'playfairdisplayitalic';
+    font-size: 22px;
+    color: #0b0728;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 45px;
+}
+.about__content{
+    font-family: 'Myriad Pro';
+    font-size: 18px;
+    color: #8f8e95;
+    margin-bottom: 45px;
+}
+.about__content p{
+    max-width: 770px;
+    margin: 0 auto;
+    padding-bottom: 25px;
+}
+.services{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.services__items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.services__item{
+    display: flex;
+    flex-direction: column;
+    align-items: self-end;
+    position: relative;
+    min-height: 270px;
+    margin-bottom: 40px;
+}
+.services__item-yellowbutton{
+    padding: 16px 12.5px;
+    max-width: 44px;
+    max-height: 44px;
+    background-color: #fab91e;
+}
+.services__item-link{
+    position: absolute;
+    bottom: -1px;
+    display: flex;
+    align-items: self-end;
+    
+}
+.services__item-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-color: #fff;
+    min-width: 195px;
+    min-height: 70px;
+    padding-left: 45px;
+    padding-bottom: 15px;
+}
+.services__item-link span{
+    font-family: 'Proxima Nova Bd';
+    color: #080425;
+    
+}
+.rent{
+    text-align: center;
+    padding-bottom: 100px;
+}
+.rent__slider-slide{
+    background-image: url(../img/rent-slider-img.jpg);
+    background-size: 50%;
+    background-position:left;
+    background-repeat: no-repeat;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: end;
+}
+.rent__slider-item{
+    position: relative;
+    right: 40px;
+    text-align: left;
+    padding-top: 40px;
+    padding-left: 40px;
+    margin-top: 40px;
+    background-color: #fff;
+    max-height: 270px;
+}
+.rent__slide-content{
+    
+    padding-left: 80px;
+}
+.rent__slide-title{
+    font-family: 'playfairdisplaybold';
+    font-size: 24px;
+    position: relative;
+}
+.rent__slide-title:after{
+    content: '';
+    width: 60px;
+    border: 1px solid #6b687c;
+    position: absolute;
+    bottom: -37px;
+    left: 0px;
+}
+.rent__slide-text{
+    font-family: 'proximanovaregular';
+    font-size: 18px;
+    line-height: 28px;
+    color: #6b687c;
+    padding-top: 25px;
+    padding-bottom: 45px;
+    max-width: 465px;
+}
+.rent__arrowleft, .rent__arrowright{
+    padding: 15px;
+    background-color: #fab91e;
+}
+.rent__arrowleft:hover, .rent__arrowright:hover{
+    background-color: #d39500;
+    cursor: pointer;
+}
+.rent__sliderbutton{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 20px;
+
+}
+.rent__bottombox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.rent__bottombox{
+    padding-top: 100px;
+}
+.rent__bottombox a{
+    font-family: 'playfairdisplaybold';
+    font-size: 16px;
+    line-height: 24px;
+    color: #080425;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+    align-items: center;
+    background-color: #fab91e;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.rent__bottombox a:hover{
+    background-color: #d39500;
+}
+.footer__topbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footer__topbox .footer__callItems,
+.footer__topbox .footer__adressItems,
+.footer__topbox .footer__mailItems
+{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.footer__topbox a{
+    font-family: 'proximanovasemibold';
+    font-size: 13px;
+    color: #080425;
+    line-height: 24px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer__topbox a img{
+    max-width: 15px;
+    max-height: 11px;
+}
+.footer__bottombox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 35px;
+    align-items: center;
+}
+.footer__bottombox-copyright{
+    font-family: 'proximanovaregular';
+    font-size: 12px;
+    color: #6b687c;
+}
+.footer__bottombox-tian{
+    display: flex;
+    flex-direction: row;
+}
+.footer__bottombox-topitem{
+    text-transform: uppercase;
+    line-height: 16px;
+}
+.footer__bottombox-tianitems{
+    font-family: 'Myriad Pro';
+    font-size: 12px;
+    color: #96959d;
+    padding-left: 12px;
+}
+@media screen and (max-width: 1175px){
+    .container{
+        width: 100%;
+    }
+    .startpage__slider-items h2{
+        margin: 0 auto;
+    }
+    .startpage__slider-items p{
+        max-width: initial;
+        text-align: center;
+    }
+    .startpage__slider-button{
+        justify-content: center;
+    }
+    .header__menu {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .header__menu a{
+        min-width: auto;
+    }
+}
+@media screen and (max-width: 900px){
+    .rent__slider-item{
+        right: 140px;
+    }
+    .rent__bottombox a{
+        flex-direction: column;
+    }
+}
