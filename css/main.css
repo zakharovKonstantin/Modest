@@ -134,9 +134,39 @@ a{
 header{
     width: 100%;
 }
+.verticallinesbg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 10000;
+    pointer-events: none;
+}
+.verticallinesbg-item{
+    border-left: 1px solid rgba(112, 112, 112, 0.3);
+    width: 15%;
+    opacity: 0.5;
+}
+.verticallinesbg-item:first-child{
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
+}
+.verticallinesbg-item:last-child{
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
+}
 .container{
     width: 1173px;
     margin: 0 auto;
+}
+.animated{
+	opacity: 1 !important;
+	transition: opacity 1s;
+	transition-delay: 0.25s;
+}
+.need-animate{
+	opacity: 0 !important;
 }
 .cap{
     font-family: 'proximanovasemibold';
@@ -144,9 +174,6 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-}
-.cap .logo{
-    
 }
 .cap span{
     color: #99999b;
@@ -187,9 +214,11 @@ header{
     padding-top: 38px;
     padding-bottom: 35px;
     flex-grow: 1;
+    transition: all 0.8s ease-in-out;
 }
 .header__menu a:hover{
     background-color: #211e3b;
+    transition: all 0.5s ease-in-out;
 }
 .header__menu a svg{
     padding-left: 10px;
@@ -287,9 +316,11 @@ header{
     padding: 22px;
     background-color: #fab91e;
     min-width: 183px;
+    transition: all 0.8s ease-in-out;
 }
 .yellowbutton:hover{
     background-color: #d39500;
+    transition: all 0.5s ease-in-out;
 }
 .benefits{
     text-align: center;
@@ -312,6 +343,9 @@ header{
     font-size: 52px;
     line-height: 48px;
     padding-bottom: 60px;
+}
+.content{
+    position: relative;
 }
 .benefits__content{
     display: flex;
@@ -396,6 +430,11 @@ header{
     max-width: 44px;
     max-height: 44px;
     background-color: #fab91e;
+    transition: all 0.8s ease-in-out;
+}
+.services__item-yellowbutton:hover{
+    background-color: #d39500;
+    transition: all 0.8s ease-in-out;
 }
 .services__item-link{
     position: absolute;
@@ -515,6 +554,8 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    padding-bottom: 55px;
 }
 .footer__topbox .footer__callItems,
 .footer__topbox .footer__adressItems,
@@ -541,9 +582,9 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 40px;
-    padding-bottom: 35px;
+    padding: 55px 75px 35px 75px;
     align-items: center;
+    z-index: 1000000000000000;
 }
 .footer__bottombox-copyright{
     font-family: 'proximanovaregular';
@@ -563,6 +604,13 @@ header{
     font-size: 12px;
     color: #96959d;
     padding-left: 12px;
+}
+.photoincreasehover{
+    transition: all 0.8s ease-in-out;
+}
+.photoincreasehover:hover{
+    transform: scale(1.2);
+    transition: all 0.8s ease-in-out;
 }
 @media screen and (max-width: 1175px){
     .container{
