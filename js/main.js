@@ -10,9 +10,6 @@ $('.rent__slider').slick({
     prevArrow: $('.rent__arrowleft'),
     nextArrow: $('.rent__arrowright'),
 });
-if($('.slick-dots li').hasClass('slick-active')){
-    
-}
 (function($) {
 	function animatedBlocks () {
 		$('.need-animate').each(function () {
@@ -41,3 +38,6 @@ if($('.slick-dots li').hasClass('slick-active')){
 		animatedBlocks();
 	});
 })(jQuery);
+$('.header__menu-aboutcompany').on('click', function(){
+	$('.header__menu-aboutcompanymenu').toggleClass('aboutcompanymenuactive');
+})

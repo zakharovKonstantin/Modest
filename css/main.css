@@ -159,6 +159,7 @@ header{
 .container{
     width: 1173px;
     margin: 0 auto;
+    position: relative;
 }
 .animated{
 	opacity: 1 !important;
@@ -215,6 +216,7 @@ header{
     padding-bottom: 35px;
     flex-grow: 1;
     transition: all 0.8s ease-in-out;
+    position: relative;
 }
 .header__menu a:hover{
     background-color: #211e3b;
@@ -222,6 +224,20 @@ header{
 }
 .header__menu a svg{
     padding-left: 10px;
+}
+.header__menu-aboutcompanymenu{
+    position: absolute;
+    top: 86px;
+    min-width: 195px;
+    opacity: 0;
+    visibility: hidden;
+    left: calc((100vw - 1186px) / 2);
+    transition: all 0.8s ease-in-out;
+}
+.aboutcompanymenuactive{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s ease-in-out;
 }
 .startpage{
     background-image: url(../img/homepage.jpg);
@@ -283,6 +299,7 @@ header{
     left: 16px;
     cursor: pointer;
     fill: #fff;
+    transition: all 0.8s ease-in-out;
 }
 .arrownext{
     width: 18px;
@@ -292,10 +309,12 @@ header{
     right: 16px;
     fill: #fff;
     cursor: pointer;
+    transition: all 0.8s ease-in-out;
 }
 .arrowprev:hover,
 .arrownext:hover{
     fill: #d39500;
+    transition: all 0.3s ease-in-out;
 }
 .slick-dots{
     text-align: right !important;
@@ -425,6 +444,11 @@ header{
     min-height: 270px;
     margin-bottom: 40px;
 }
+.services__item-photobox{
+    overflow: hidden;
+    max-width: 320px;
+    max-height: 227px;
+}
 .services__item-yellowbutton{
     padding: 16px 12.5px;
     max-width: 44px;
@@ -434,7 +458,7 @@ header{
 }
 .services__item-yellowbutton:hover{
     background-color: #d39500;
-    transition: all 0.8s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 .services__item-link{
     position: absolute;
@@ -444,6 +468,8 @@ header{
     
 }
 .services__item-text{
+    font-family: 'Proxima Nova Bd';
+    color: #080425;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -453,11 +479,17 @@ header{
     min-height: 70px;
     padding-left: 45px;
     padding-bottom: 15px;
+    text-align: left;
+    
 }
-.services__item-link span{
+.services__item-text span{
     font-family: 'Proxima Nova Bd';
     color: #080425;
-    
+    transition: all 0.8s ease-in-out;
+}
+.services__item-text span:hover{
+    color: #d39500;
+    transition: all 0.3s ease-in-out;
 }
 .rent{
     text-align: center;
@@ -513,10 +545,12 @@ header{
 .rent__arrowleft, .rent__arrowright{
     padding: 15px;
     background-color: #fab91e;
+    transition: all 0.8s ease-in-out;
 }
 .rent__arrowleft:hover, .rent__arrowright:hover{
     background-color: #d39500;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 .rent__sliderbutton{
     display: flex;
@@ -546,9 +580,11 @@ header{
     background-color: #fab91e;
     padding-top: 35px;
     padding-bottom: 35px;
+    transition: all 0.8s ease-in-out;
 }
 .rent__bottombox a:hover{
     background-color: #d39500;
+    transition: all 0.3s ease-in-out;
 }
 .footer__topbox{
     display: flex;
@@ -607,6 +643,7 @@ header{
 }
 .photoincreasehover{
     transition: all 0.8s ease-in-out;
+    min-height: 227px;
 }
 .photoincreasehover:hover{
     transform: scale(1.2);
@@ -654,5 +691,69 @@ header{
 @media screen and (max-width: 690px){
     .rent__slider-img{
         width: 100%;
+    }
+}
+@media screen and (max-width: 460px) {
+    .yellowbutton{
+        width: 70%;
+    }
+    .startpage__slider h2{
+        font-size: 14px;
+    }
+    .startpage__slider-items{
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    .startpage__slider-items p{
+        font-size: 14px;
+    }
+    .rent__slider-item{
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .footer__topbox{
+        display: block;
+    }
+    .cap{
+        font-size: 14px;
+    }
+    .logo{
+        width: 60px;
+    }
+    .startpage__slider-button{
+        flex-direction: column;
+        text-align: center;
+    }
+    .startpage__slider-button a{
+        margin-bottom: 20px;
+    }
+    .benefits__content{
+        flex-direction: column;
+    }
+    .benefits__item{
+        width: 100%;
+    }
+    .services__item img{
+        width: 100%;
+    }
+    .rent__slider-item{
+        right: 0;
+    }
+    .rent__bottombox{
+        flex-direction: column;
+    }
+    .rent__bottombox a{
+        width: 100%;
+        flex-direction: row;
+    }
+    .footer__bottombox{
+        padding: 0;
+    }
+    .footer__bottombox-tian{
+        align-items: center;
+    }
+    .footer__bottombox-tian img{
+        height: 40px;
     }
 }
