@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,33 +29,38 @@
                             <span>Челябинск, Худяково, 12а</span>
                         </div>
                     </a>
+                    <div class="header__menu-burger">
+                        <span></span>
+                    </div>
                 </div>
-                <nav class="header__menu">
-                    <a class="header__menu-aboutcompany" href="#">
-                        <span>О компании</span>
-                        <svg 
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                            width="9px" height="5px">
-                            <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
-                            d="M8.993,0.594 L5.122,4.384 L5.133,4.395 L4.499,4.993 L3.866,4.395 L3.877,4.384 L0.5,0.594 L0.638,0.4 L4.499,3.775 L8.360,0.4 L8.993,0.594 Z"/>
-                        </svg>
-                    </a>
-                    <ul class="header__menu-aboutcompanymenu">
-                        <li><a href="#">Наша фотостудия</a></li>
-                        <li><a href="#">Отзывы</a></li>
-                        <li><a href="#">Частые вопросы</a></li>
-                    </ul>
-                    <a class="header__menu-hallrental" href="#">
-                        <span>Аренда залов</span>
-                    </a>
-                    <a href="#">
-                        <span>Фотосессии</span>
-                    </a>
-                    <a href="#">Правила</a>
-                    <a href="#">Портфолио</a>
-                    <a href="#">Контакты</a>
-                </nav>
+                <ul class="header__menu">
+                    <li class="header__menu-aboutcompany">
+                        <a href="#">О компании
+                            <svg 
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="9px" height="5px">
+                                <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                                d="M8.993,0.594 L5.122,4.384 L5.133,4.395 L4.499,4.993 L3.866,4.395 L3.877,4.384 L0.5,0.594 L0.638,0.4 L4.499,3.775 L8.360,0.4 L8.993,0.594 Z"/>
+                            </svg>
+                        </a>
+                        <ul class="header__menu-aboutcompanymenu">
+                            <li><a href="#" class="closeaboutcompanymenu">Закрыть</a></li> 
+                            <li><a href="#">Наша фотостудия</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Частые вопросы</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__menu-hallrental" >
+                        <a href="#">Аренда залов</a>
+                    </li>
+                    <li>
+                        <a href="#">Фотосессии</a>
+                    </li>
+                    <li><a href="#">Правила</a></li>
+                    <li><a href="#">Портфолио</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
             </div>
         </header>
         <div class="startpage__slider">
@@ -378,7 +383,7 @@
             </div>
         </div>
     </section>
-    <footer class="need-animate">
+    <footer class="need-animate" id="contacts">
         <div class="container">
             <div class="footer__topbox">
                 <a href="#">
